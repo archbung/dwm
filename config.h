@@ -3,9 +3,9 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Inconsolata:size=13"
+	"Inconsolata:size=12"
 };
-static const char dmenufont[]       = "Inconsolata:size=13";
+static const char dmenufont[]       = "Inconsolata:size=12";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
