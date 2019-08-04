@@ -67,6 +67,7 @@ static const char *brightnessdown[] = { "xbacklight", "-", "5", NULL };
 static const char *audiomute[] = { "pamixer", "-t", NULL };
 static const char *audioraisevolume[] = { "pamixer", "-i", "5", NULL };
 static const char *audiolowervolume[] = { "pamixer", "-d", "5", NULL };
+static const char *lockscreen[] = { "i3lock", "-c", "000000", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *monitorcmd[] = { "monitor.sh", NULL };
 
@@ -80,6 +81,7 @@ static Key keys[] = {
 	{ 0,		    XF86XK_AudioLowerVolume, spawn, {.v = audiolowervolume } },
         { 0,                XF86XK_Display, spawn, {.v = monitorcmd } },
 	{ MODKEY|ShiftMask, XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY|ShiftMask, XK_l,      spawn,          {.v = lockscreen } },
 	{ MODKEY,           XK_b,      togglebar,      {0} },
 	{ MODKEY,           XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,           XK_k,      focusstack,     {.i = -1 } },

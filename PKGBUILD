@@ -12,12 +12,13 @@ arch=('i686' 'x86_64')
 license=('MIT')
 options=(zipman)
 depends=('libx11' 'libxinerama' 'libxft' 'freetype2' 'kitty' 'dmenu')
+optdepends=('i3lock: lockscreen support')
 install=dwm.install
 source=(http://dl.suckless.org/dwm/dwm-$pkgver.tar.gz
 	config.h
 	dwm.desktop)
 sha256sums=('97902e2e007aaeaa3c6e3bed1f81785b817b7413947f1db1d3b62b8da4cd110e'
-            'bcc9eee5322fc18e66bbdd683b8e08a49f790a4c414d9e8d3e9e86da4e9ff9e4'
+            '8a509031a53007f7f17feadd00eeac85cb4bcccdea7577bf3c3359e655eef833'
             'bc36426772e1471d6dd8c8aed91f288e16949e3463a9933fee6390ee0ccd3f81')
 
 prepare() {
